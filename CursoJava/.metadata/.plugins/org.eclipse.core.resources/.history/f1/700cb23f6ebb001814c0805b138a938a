@@ -1,0 +1,14 @@
+package habladores;
+
+public class Tv extends Aparatos {
+
+	public Tv() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Tv(int consumo, double precio) {
+		super(consumo, precio);
+		// TODO Auto-generated constructor stub
+	}
+
+}

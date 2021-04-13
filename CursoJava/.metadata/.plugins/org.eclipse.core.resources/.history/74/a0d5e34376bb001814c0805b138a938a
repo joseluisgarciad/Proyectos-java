@@ -1,0 +1,14 @@
+package habladores;
+
+public class Radio extends Aparatos {
+
+	public Radio() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Radio(int consumo, double precio) {
+		super(consumo, precio);
+		// TODO Auto-generated constructor stub
+	}
+
+}

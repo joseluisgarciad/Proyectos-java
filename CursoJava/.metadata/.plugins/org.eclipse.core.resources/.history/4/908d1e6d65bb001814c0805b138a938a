@@ -1,0 +1,28 @@
+package animales;
+
+public class Animal {
+
+	private String tipo_alimentacion;
+	private boolean domestico;
+	private boolean extinguido;
+	private int peso;
+	private int anhos_vida;
+	
+    public Animal () {
+    	this.extinguido = false;
+    }
+    
+    private Animal (boolean extinguido, int anhos) {
+        this.extinguido = extinguido;
+        this.anhos_vida = anhos;
+    }
+
+	public Animal(String tipo_alimentacion, boolean domestico, boolean extinguido, int peso, int anhos_vida) {
+		this(extinguido, anhos_vida);
+		this.tipo_alimentacion = tipo_alimentacion;
+		this.domestico = domestico;
+		this.peso = peso;
+	}
+    
+    
+}

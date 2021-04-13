@@ -1,0 +1,48 @@
+package habladores;
+
+public class Alumno extends Persona implements hablador{
+
+	public String carrera = "";
+	public String curso = "";
+	
+	public Alumno() {
+		
+	}
+
+	public Alumno(String nombre, int edad, String carrera, String curso) {
+		super(nombre, edad);
+		this.carrera = carrera;
+		this.curso = curso;
+	}
+
+	
+	@Override
+	public String hablar() {
+		// TODO Auto-generated method stub
+		Alumno("Marta",22,"Informatica","3");
+		this.edad = 22;
+		this.nombre = "Marta";
+		this.carrera = "Informatica";
+		this.curso = "3";
+		return "Hola, soy un Alumno y sé hablar";
+	}
+
+
+	public String getCarrera() {
+		return carrera;
+	}
+
+	public void setCarrera(String carrera) {
+		this.carrera = carrera;
+	}
+
+	public String getCurso() {
+		return curso;
+	}
+
+	public void setCurso(String curso) {
+		this.curso = curso;
+	}
+	
+	
+}

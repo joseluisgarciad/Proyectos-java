@@ -1,0 +1,32 @@
+package habladores;
+
+public class Llamar {
+	
+	public static void main(){
+		
+		Profesor Profe1 = null;
+
+		
+		 String objetos[];
+	     objetos = new String [12];
+	     objetos[0] = "una PERSONA";
+	     objetos[1] = "un AVE";
+	     objetos[2] = "un APARATO";
+	     objetos[3] = "un BUITRE";
+	     objetos[4] = "un CANARIO";
+	     objetos[5] = "un LORO";
+	     objetos[6] = "un PIOLIN";
+	     objetos[7] = "un ALUMNO";
+	     objetos[8] = "un PROFESOR";
+	     objetos[9] = "un BEDEL";
+	     objetos[10] = "una TV";
+	     objetos[11] = "una RADIO";
+	     
+	     for (int z=0;z<objetos.length;z++) {
+	    	 System.out.println(objetos[z]);
+	    	 //if (objetos[z])==
+	    	 System.out.println(Profe1.hablar());
+	     }
+	    	 
+	}
+}

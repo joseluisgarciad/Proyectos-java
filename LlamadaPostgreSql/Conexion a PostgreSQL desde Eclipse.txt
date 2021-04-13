@@ -1,0 +1,14 @@
+Hacer click boton derecho sobre el nombre del proyecto en explorador de proyectos en Eclipse.
+Entrar en propiedades.
+Entrar en "Java Build Path"
+Enrar en pestaña "libraries"
+Pinchar en "Classpath"
+Pulsar botón "Add External JARs"
+Seleccionar "postgresql-42.2.18" o el jar que corresponda del directorio de pgJDBC en el disco
+Pulsar "Apply and Close"
+
+Es probable que haya que crear la variable de entorno CLASSPATH
+    Boton derecho sobre "Este equipo"
+    Entrar en "Configuración avanzada del sistema"
+    Pulsar en "Variables de entorno"
+    Crear si no existe CLASSPATH e indicar la ruta del jar.

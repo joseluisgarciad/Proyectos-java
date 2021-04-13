@@ -1,0 +1,17 @@
+package plpgsql;
+
+import javax.swing.JOptionPane;
+
+public class Lanzador {
+	static String resultado;
+	public static void main(String[] args) {	
+	/*LlamadaPlpgSQL Plpg = new LlamadaPlpgSQL();
+	 *resultado = Plpg.CallFunction(202108); */   
+		
+	Recupera_log Plpg = new Recupera_log();	
+	resultado = Plpg.Trae_registro(202108);  
+	/* JOptionPane.showMessageDialog(null,"Correcto: " + resultado); */
+	/*JOptionPane.showMessageDialog(null, resultado);*/
+	
+	}
+}

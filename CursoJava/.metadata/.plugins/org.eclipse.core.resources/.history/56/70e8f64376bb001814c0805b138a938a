@@ -1,0 +1,29 @@
+package habladores;
+
+public abstract class Piolin extends Canario {
+
+	public int numPeliculas = 0;
+	
+	public Piolin() {
+		
+	}
+	
+	public Piolin(String sexo, int edad, boolean canta, int numPeliculas) {
+		super();
+		this.sexo = sexo;
+		this.edad = edad;
+		this.canta = canta;
+		this.numPeliculas = numPeliculas;
+	}
+
+	public int getNumPeliculas() {
+		return numPeliculas;
+	}
+
+	public void setNumPeliculas(int numPeliculas) {
+		this.numPeliculas = numPeliculas;
+	}
+	
+	
+	
+}

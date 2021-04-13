@@ -1,0 +1,23 @@
+
+public class Operar {
+	public double operacion (String op1, int s1, int s2) {
+		//double resul = -999;
+		if (op1 == "S") {
+			return (s1+s2);
+		} else if (op1 == "R") {
+			return s1-s2;
+		} else if (op1 == "M") {
+			return s1*s2;
+		} else if (op1 == "D") {
+			return s1/s2;
+		} else {
+			return -999;
+		}
+		 
+		//return resul;
+
+     }
+
+}   
+
+

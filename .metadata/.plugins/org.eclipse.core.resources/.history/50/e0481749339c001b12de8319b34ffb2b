@@ -1,0 +1,58 @@
+package plpgsql;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class menu_opciones {
+	 
+	    public static void main(String[] args) {
+	 
+	        Scanner sn = new Scanner(System.in);
+	        boolean salir = false;
+	        int opcion; //Guardaremos la opcion del usuario
+	 
+	        while (!salir) {
+	            System.out.println("Menú de opciones");	 
+	            System.out.println("1. Lanzamiento Función de insert (t_log_ejecucion, sin Retorno");
+	            System.out.println("2. Lanzamiento Select (t_log_ejecucion) con retorno de datos");
+	            System.out.println("3. Prueba menú grafico");
+	            System.out.println("4. Salir");
+	 
+	            try {
+	 
+	                System.out.println("Escribe una de las opciones");
+	                opcion = sn.nextInt();
+	                String resultado;
+	                switch (opcion) {
+	                    case 1:
+	                        System.out.println("Has seleccionado la opcion 1");
+	                    	  LlamadaPlpgSQL Plpgfunc = new LlamadaPlpgSQL();
+	                    	  resultado = Plpgfunc.CallFunction(202108);  
+	                         JOptionPane.showMessageDialog(null,"Correcto: " + resultado); 
+	                        break;
+	                    case 2:
+	                        System.out.println("Has seleccionado la opcion 2");
+	                        Recupera_log Plpgsql = new Recupera_log();	
+	                    	resultado = Plpgsql.Trae_registro(202108); 
+	                        break;
+	                    case 3:
+	                        System.out.println("Has seleccionado la opcion 3");
+	                        break;
+	                    case 4:
+	                        salir = true;
+	                        break;
+	                    default:
+	                        System.out.println("Solo números entre 1 y 4");
+	                }
+	            } catch (InputMismatchException e) {
+	                System.out.println("Debes insertar un número");
+	                sn.next();
+	            }
+	        }
+	 
+	    }
+	 
+	}
+
+

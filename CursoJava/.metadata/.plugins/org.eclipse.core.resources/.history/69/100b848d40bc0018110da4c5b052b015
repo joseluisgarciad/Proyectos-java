@@ -1,0 +1,7 @@
+package habladores;
+
+public interface hablador {
+
+	public String hablar();
+	
+}

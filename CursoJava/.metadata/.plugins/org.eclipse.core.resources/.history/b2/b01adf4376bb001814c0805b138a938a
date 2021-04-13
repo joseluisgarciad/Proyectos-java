@@ -1,0 +1,39 @@
+package habladores;
+
+public class Profesor extends Persona {
+
+	public String despacho = "";
+	public String email = "";
+	
+	public Profesor() {
+		
+	}
+	
+
+
+	public Profesor(String despacho, String email) {
+		super();
+		this.despacho = despacho;
+		this.email = email;
+	}
+
+
+
+	public String getDespacho() {
+		return despacho;
+	}
+
+	public void setDespacho(String despacho) {
+		this.despacho = despacho;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
+}

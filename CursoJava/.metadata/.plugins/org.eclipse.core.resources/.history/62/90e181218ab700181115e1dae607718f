@@ -1,0 +1,27 @@
+
+public class Operar {
+	public double operacion (String op1, int s1, int s2) {
+		
+		double resul = -999;
+		
+		System.out.println(op1);
+		if (op1.equals("S")) {
+			resul = s1+s2;
+
+		} else if (op1.equals("R")) {
+			resul = s1-s2;
+		} else if (op1.equals("M")) {
+			resul = s1*s2;
+		} else if (op1.equals("D")) {
+			resul = s1/s2;
+		} else {
+			resul = -999;
+		}
+		 
+		return resul;
+
+     }
+
+}   
+
+

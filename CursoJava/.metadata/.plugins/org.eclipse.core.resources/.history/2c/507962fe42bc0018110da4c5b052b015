@@ -1,0 +1,28 @@
+package juego;
+
+public class Juego {
+
+	public int numVidas = 0;
+	
+	public void MuestraVidasRestantes() {
+		System.out.println(this.numVidas);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Juego juego1 = new Juego();
+        juego1.numVidas = 5;
+        juego1.MuestraVidasRestantes();
+        juego1.numVidas--;
+	}
+	
+	public Juego() {
+		
+	}
+	
+	public Juego(int numVidas) {
+		super();
+		this.numVidas = numVidas;
+	}
+
+	
+}

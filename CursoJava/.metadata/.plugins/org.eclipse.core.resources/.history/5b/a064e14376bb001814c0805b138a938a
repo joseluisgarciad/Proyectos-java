@@ -1,0 +1,36 @@
+package habladores;
+
+public class Bedel extends Persona {
+
+	public String turno = "";
+	public int antiguedad = 0;
+	
+	public Bedel() {
+		
+	}
+	
+	public Bedel(String turno, int antiguedad) {
+		super();
+		this.turno = turno;
+		this.antiguedad = antiguedad;
+	}
+
+	public String getTurno() {
+		return turno;
+	}
+
+	public void setTurno(String turno) {
+		this.turno = turno;
+	}
+
+	public int getAntiguedad() {
+		return antiguedad;
+	}
+
+	public void setAntiguedad(int antiguedad) {
+		this.antiguedad = antiguedad;
+	}
+	
+	
+	
+}

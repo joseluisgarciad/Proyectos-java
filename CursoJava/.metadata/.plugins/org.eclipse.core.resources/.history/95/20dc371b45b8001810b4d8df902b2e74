@@ -1,0 +1,48 @@
+
+public class Operar {
+	public double operacion (String op1, int s1, int s2) {
+		
+		double resul = -999;
+		
+		System.out.println(op1);
+		if (op1.equals("S")) {  // hay que usar .equals() siempre que comparemos
+			                    // objetos primitivos  ( para no igual (!op1.equals)
+			resul = s1+s2;
+		} else if (op1.equals("R")) {
+			resul = s1-s2;
+		} else if (op1.equals("M")) {
+			resul = s1*s2;
+		} else if (op1.equals("D")) {
+			if (s2 == 0) {
+				resul = -99999;
+			}
+			resul = s1/s2;
+		} else {
+			resul = -999;
+		}
+		 
+		return resul;
+
+/*		
+		switch (op1) {
+		case "S":
+			resul = s1+s2;
+			break;
+	    case "R":
+		    resul = s1-s2;
+		    break;
+        case "M":
+	        resul = s1*s2;
+	        break;
+        case "D":
+        	if(s2==0) {
+        		return -9999;
+        	}		
+	        resul = s1/s2;
+	        break;
+       }
+*/       
+	}
+}   
+
+

@@ -1,0 +1,17 @@
+
+public class Contarpalabras {
+	public static int palabras (String frase) {
+		System.out.println(frase);
+		int contador = 0;
+		for(int i=0;i<frase.length();i++){
+               if(frase.substring(i, i++)==" ") {
+            	   System.out.println(frase.substring(i));
+            	   System.out.println(frase.substring(i, i++));
+                    contador++;
+                }
+         }            
+        return contador;            
+    }
+
+
+}

@@ -1,0 +1,54 @@
+package habladores;
+
+import java.util.ArrayList;
+
+public class Canario extends Ave implements hablador {
+
+	public boolean canta = true;
+    public String cantar = "";
+ 
+    public Canario() {
+    	
+    }
+    
+	public Canario(String sexo, int edad, boolean canta) {
+		super(sexo, edad);
+		this.canta = canta;
+	}
+	
+	
+    @Override
+	public String hablar() {
+		// TODO Auto-generated method stub
+    	if (this.canta) {
+    		cantar = " y sé cantar";
+    		return "Hola, soy un Canario y sé cantar";
+    	} else {
+    		cantar = " y no sé cantar";
+        	return "Hola, soy un Canario y no sé cantar";
+    	}
+
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+    	return hablar() + "\nSexo " +this.sexo + " tengo " + this.edad + " años" + cantar;
+	}
+
+	public boolean guardar(ArrayList canarios) {
+    	return canarios.add(this);
+    }
+	
+	public boolean isCanta() {
+		return canta;
+	}
+
+	public void setCanta(boolean canta) {
+		this.canta = canta;
+	}
+
+
+	
+	
+}

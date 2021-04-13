@@ -1,0 +1,9 @@
+package habladores;
+
+public class Tv extends Aparatos {
+
+	public int consumo = 0;
+	public double precio = 0;
+
+	
+}

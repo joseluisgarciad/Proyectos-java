@@ -1,0 +1,12 @@
+
+public class Contarpalabras {
+	public static int palabras (String frase) {
+		int resultado = 0;
+		String[] fraseTroceada = frase.split(" ");
+		resultado = fraseTroceada.length;
+
+        return resultado;            
+    }
+
+
+}

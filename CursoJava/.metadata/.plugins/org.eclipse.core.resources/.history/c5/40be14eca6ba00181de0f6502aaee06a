@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+import java.awt.HeadlessException;
+import java.util.Scanner;
+
+public class Llamadapalabras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	     String Palabra = "";
+	     String Frase = "";
+	     int resultado  =0;
+	     Palabra = JOptionPane.showInputDialog("Introduce palabra " );
+	     
+	     resultado = Contarvocales.vocales(Palabra);
+	     JOptionPane.showMessageDialog(null,resultado);
+	     
+	     
+	     Frase = JOptionPane.showInputDialog("Introduce frase " );
+	     
+	     resultado = Contarpalabras.palabras(Frase);
+	     JOptionPane.showMessageDialog(null,resultado);
+	
+	}
+
+}
+;

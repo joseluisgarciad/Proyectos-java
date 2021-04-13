@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+import java.awt.HeadlessException;
+import java.util.Scanner;
+
+public class Llamadapalabras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+	}
+
+}
+;

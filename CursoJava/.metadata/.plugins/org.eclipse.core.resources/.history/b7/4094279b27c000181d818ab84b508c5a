@@ -1,0 +1,34 @@
+package juego;
+
+public abstract class Aplicacion extends Juego {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+        Juego juego1 = new Juego();
+        juego1.setNumVidas(5);
+        juego1.muestraVidasRestantes();
+        juego1.setNumVidas(juego1.getNumVidas() - 1);
+        juego1.muestraVidasRestantes();
+//        
+        juego1.quitaVida();
+        juego1.muestraVidasRestantes();
+        juego1.reiniciaPartida();
+        juego1.muestraVidasRestantes();        
+        juego1.ActualizaRecord();
+      
+        
+        
+
+        
+        Juego juego2 = new Juego();
+        juego2.setNumVidas(5);
+        juego2.muestraVidasRestantes();
+        
+        
+        
+	}
+
+
+}
+

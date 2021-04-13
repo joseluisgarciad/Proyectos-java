@@ -1,0 +1,22 @@
+
+public class Operar {
+	public int operacion (String op1, int s1, int s2) {
+		 System.out.println(op1 + " " + s1 + " " + s2);
+		int resultado = 0;
+		if (op1 == "S") {
+			resultado = s1+s2;
+			 System.out.println(op1 + " " + s1 + " " + s2 + " " + resultado);
+		} else if (op1 == "R") {
+			resultado = s1-s2;
+		} else if (op1 == "M") {
+			resultado = s1*s2;
+		} else if (op1 == "D") {
+			resultado = s1/s2;
+		}
+		  //return resultado;
+		  return s1+s2;
+     }
+
+}   
+
+

@@ -1,0 +1,29 @@
+package habladores;
+
+public class Llamar {
+	
+	public static void main(String[] args){
+		
+		Profesor profe1 = new Profesor();
+		Alumno alumno1 = new Alumno("pepe",34,"Inf","3");
+		Alumno alumno2 = new Alumno("luis",23,"Ing","1");
+		Alumno alumno3 = new Alumno("Antonio",32,"Der","2");
+		Alumno alumno4 = new Alumno("Jorge",39,"Adm","2");
+		
+		Alumno[] objetos = new Alumno[4];
+	     objetos[0] = alumno1;
+	     objetos[1] = alumno2;
+	     objetos[2] = alumno3;
+	     objetos[3] = alumno4;
+
+	     
+	     
+	     for (int z=0;z<objetos.length;z++) {
+	    	 System.out.println(objetos[z]);
+	    	 //if (objetos[z])==
+		     System.out.println(objetos[0].toString());
+
+	     }
+	    	 
+	}
+}

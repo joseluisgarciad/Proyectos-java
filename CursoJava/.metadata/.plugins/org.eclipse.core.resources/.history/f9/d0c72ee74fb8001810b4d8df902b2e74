@@ -1,0 +1,16 @@
+
+public class Utilidades {
+	 static double pi = 13.1416;
+     public static int suma (int s1, int s2) {
+        return s1+s2;
+     }
+     public int resta (int s1, int s2) {
+         return s1-s2;
+      }
+     public int multiplicacion (int s1, int s2) {
+         return s1*s2;
+      }
+     public int division (int s1, int s2) {
+         return s1/s2;
+      }
+}

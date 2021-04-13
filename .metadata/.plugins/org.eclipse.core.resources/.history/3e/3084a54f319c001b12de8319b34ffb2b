@@ -1,0 +1,19 @@
+package plpgsql;
+
+import javax.swing.JOptionPane;
+import plpgsql.Lista_seleccion;
+public class Lanzador {
+	static String resultado;
+	public static void main(String[] args) {	
+  
+	Lista_seleccion l = new Lista_seleccion();	
+	int respuesta = l.Lista();	
+	Recupera_log Plpg = new Recupera_log();	
+	resultado = Plpg.Trae_registro(202108);  
+	/* JOptionPane.showMessageDialog(null,"Correcto: " + resultado); */
+	/*JOptionPane.showMessageDialog(null, resultado);*/
+	
+	}
+}
+
+

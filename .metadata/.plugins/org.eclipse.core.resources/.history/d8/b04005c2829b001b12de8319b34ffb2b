@@ -1,0 +1,10 @@
+package plpgsql;
+
+public class Lanzador {
+	public static void main(String[] args) {	
+	LlamadaPlpgSQL Plpg = new LlamadaPlpgSQL();   
+	System.out.println(Plpg.CallFunction(202108));   
+	System.out.println("Correcto");
+	
+	}
+}

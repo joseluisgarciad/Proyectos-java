@@ -1,0 +1,57 @@
+
+public class Utilidades {
+	 static double pi = 13.1416;
+	 
+     public static int suma (int s1, int s2) {
+        return s1+s2;
+     }
+     public int resta (int s1, int s2) {
+         return s1-s2;
+      }
+     public int multiplicacion (int s1, int s2) {
+         return s1*s2;
+      }
+     public int division (int s1, int s2) {
+         return s1/s2;
+      }
+     
+     static double mEUR = 0.86;
+     static double mDolar = 1.16;	
+
+     public static double Conversor (String DivO, String DivD, double s1) {
+     		double resultado = 0;
+
+     		if (DivO.equals("EUR")) { 
+     			resultado = (mDolar*s1);
+     		} else if  (DivO.equals("USD")) { 
+     			resultado = (mEUR*s1);				
+     		}
+     		
+     		return resultado;
+     		
+     	}
+     
+     public static int Contarvocales (String palabra) {
+
+ 		int contador = 0;
+ 		String vocales="aeiou·ÈÌÛ˙AEIOU¡…Õ”⁄";
+ 		for(int i=0;i<palabra.length();i++){
+             for(int j=0;j<vocales.length();j++){
+                if(palabra.charAt(i)==vocales.charAt(j)){
+                     contador++;
+                 }
+
+             }            
+             
+ 	    }
+ 		return contador;
+     }
+     
+     public static int Contarpalabras (String frase) {
+ 		int resultado = 0;
+ 		String[] fraseTroceada = frase.split(" ");
+ 		resultado = fraseTroceada.length;
+
+         return resultado;            
+     }
+}

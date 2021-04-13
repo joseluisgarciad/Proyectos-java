@@ -1,0 +1,23 @@
+package animales;
+
+public class AnimalTerrestre extends Animal {
+
+	@Override
+	public void moverse() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void nacer() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void alimentarse() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
