@@ -70,6 +70,25 @@ public class LlamadaPlpgSQL {
 	   }
 	   return res;
 	}
+	
+	public Integer LanzaSQL( String SQL )
+	{
+	    String res="";
+	    try {
+	    	/* java.util.Date fecha = new Date(); */ 
+	      statement = conn.createStatement();
+	      resultSet = statement.executeQuery(SQL);
+	      /**( */
+	      while (resultSet.next())
+	      {
+	        res=resultSet.getString(1);
+	      }
+	     }
+	   catch (SQLException ex) {
+	        System.err.println( ex.getMessage() );
+	   }
+	   return 0;
+	}
 
 
 
