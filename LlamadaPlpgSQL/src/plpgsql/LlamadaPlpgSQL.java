@@ -22,7 +22,7 @@ public class LlamadaPlpgSQL {
 	  private String url = "jdbc:postgresql://localhost:5432/"+db;
 	  /** Conexion a base de datos */
 	  private Connection conn = null;
-	  /** Para obtener los resultados de las consultas SQL de la base de datos */
+	  /** Para obtener los resultados de las consultas SQL de la base de datos */  //*  ddddd *//
 	  private ResultSet resultSet = null;
 	  /** Para enviar comandos SQL a la base de datos */
 	  private Statement statement = null;
